@@ -1,0 +1,64 @@
+body {
+  background-color: grey;
+}
+
+div#imatges {
+  background-color: blueviolet;
+  padding: 5px;
+  margin:5px;
+  height: 500px;
+
+  position: relative;
+}
+
+p#titol {
+  font-size: 3rem;
+  text-decoration: underline;
+  font-style: italic;
+  margin: 5px;
+
+  position: fixed;
+
+  /* CSS AL DAVALL */
+
+}
+
+h2 {
+  font-size: 40px;
+  color: white;
+  margin: 0px;
+  top:40%;
+  left:40%;
+  position: relative;
+
+  /* CSS AL DAVALL */
+
+}
+
+img#model {
+  position: absolute;
+  top:40px;
+  left:40px;
+  /* CSS AL DAVALL */
+ 
+}
+
+img#scissors {
+  position: absolute;
+bottom:20px;
+right:20px;
+
+  /* CSS AL DAVALL */
+
+}
+
+.description {
+  font-size: 2em;
+  color: yellowgreen;
+  top:400px;
+  left:5px;
+  position: relative;
+
+/* CSS AL DAVALL */
+
+}

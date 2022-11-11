@@ -11,7 +11,7 @@ I si **tenim temps**, veurem també el funcionament de *NODE.JS*
 
 ---
 GIT
-![](Captura.JPG)
+![](Git-Icon-1788C.png)
 
 
 
