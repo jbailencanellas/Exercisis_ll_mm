@@ -6,39 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projecte</title>
     <style>
+      :root {
+        font-size: 14px;
+      }
+      
+      [class*="columna-"] {
+      float: right;
+      padding: 12px;
+}
       body {
         background-color: beige;
         padding: 5px;
       }
+      .capcelera-llista {
+        background-color:maroon;
+        color:white;
+        font-size:1.2rem;
+        padding:6px;
+        margin:4px;
+
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        
+      }
+      .llista li {
+        background-color: brown;
+        color:white;
+        font-size:1.2rem;
+        padding:10px;
+        margin:4px;
+       
+      }
+      .llista li:hover {
+        background-color: darkred;
+
+
+      }
       .cont1 {
         background-color: darkkhaki;
-        padding:15px;
-        
+        padding: 15px;
+        background-image:url(https://i0.wp.com/cdn.whadda.com/wp-content/uploads/2020/12/09143615/3Dprinting-banner.png?w=1200&ssl=1);
+
       }
       h1 {
         text-align: center;
         color: white;
         text-decoration: underline;
+        font-size: 4rem;
       }
-      
+      img#spool {
+        position: absolute;
+        width: 200px;
+        left: 20px;
+      }
+      img#resinbottle {
+        position: absolute;
+        right: 20px;
+        width: 130px;
+      }
       .cont2 {
-        background-color: khaki;
-        display:block;
-        width:40%;  
+        display: block;
+        padding:12px;
         height: 400px;
       }
       .p1 {
         color: rgb(34, 16, 0);
         width: auto;
-      }
-      h2 {
-        padding: 10px;
+        font-size: 1.2rem;
       }
 
       .cont3 {
-        background-color: khaki;
-        position: absolute;
-        bottom: 10px;
+        background-color: darkkhaki;
+        color:rgb(34, 16, 0);
+        text-align:center;
+        padding:5px;
+        margin:10px;
+       
+        
       }
       .p2 {
         text-align: center;
@@ -47,50 +94,176 @@
       .cita {
         color: grey;
         font-style: italic;
+        font-size: 1.3rem;
       }
       a:link {
         color: red;
       }
 
       a:visited {
-        color: green;
+        color: purple;
       }
 
       a:hover {
-        color: hotpink;
+        color:midnightblue;
       }
 
       a:active {
         color: blue;
+
       }
-      @media only screen and (min-width: 450px) {
-        .cont2 {
-          bottom: 60px;
+      .img1 {
+        width: 300px;
+        float: right;
+        height: auto;
+      }
+      .resum-costat {
+     background-color:brown;
+     color:white;
+     padding:12px;
+     
+     text-align:center;
+     font-size:1rem;
+      }
+      
+      /* Per a móbils: */
+      [class*="columna-"] {
+        width: 100%;
+          }
+      @media only screen and (min-width: 630px) {
+        /* Per a tablet: */
+        .columna-tablet-1 {
+          width: 8.33%;
+        }
+        .columna-tablet-2 {
+          width: 16.66%;
+        }
+        .columna-tablet-3 {
+          width: 25%;
+        }
+        .columna-tablet-4 {
+          width: 33.33%;
+        }
+        .columna-tablet-5 {
+          width: 41.66%;
+        }
+        .columna-tablet-6 {
+          width: 50%;
+        }
+        .columna-tablet-7 {
+          width: 58.33%;
+        }
+        .columna-tablet-8 {
+          width: 66.66%;
+        }
+        .columna-tablet-9 {
+          width: 75%;
+        }
+        .columna-tablet-10 {
+          width: 83.33%;
+        }
+        .columna-tablet-11 {
+          width: 91.66%;
+        }
+        .columna-tablet-12 {
+          width: 100%;
         }
       }
+      @media only screen and (min-width: 890px) {
+        /* Per a ordinador: */
+        .columna-ordinador-1 {
+          width: 8.33%;
+        }
+        .columna-ordinador-2 {
+          width: 16.66%;
+        }
+        .columna-ordinador-3 {
+          width: 25%;
+        }
+        .columna-ordinador-4 {
+          width: 33.33%;
+        }
+        .columna-ordinador-5 {
+          width: 41.66%;
+        }
+        .columna-ordinador-6 {
+          width: 50%;
+        }
+        .columna-ordinador-7 {
+          width: 58.33%;
+        }
+        .columna-ordinador-8 {
+          width: 66.66%;
+        }
+        .columna-ordinador-9 {
+          width: 75%;
+        }
+        .columna-ordinador-10 {
+          width: 83.33%;
+        }
+        .columna-ordinador-11 {
+          width: 91.66%;
+        }
+        .columna-ordinador-12 {
+          width: 100%;
+        }
+      }
+
     </style>
   </head>
   <body>
     <div class="cont1">
-      <h1>Informàtica</h1>
+      <img id="spool" src="images/filament_spool.png" alt="Spool" />
+      <img id="resinbottle" src="images/resin3d.png" alt="Botella de resina"/>
+      <h1>Impressió 3D</h1>
     </div>
-    <div class="cont2">
-      <h2>Descripció:</h2>
-      <p class="cita">"Text temporal. Text temporal"</p>
+    <div class="columna-ordinador-3 columna-tablet-3 llista">
+      <div class="capcelera-llista">
+    <p><b>Conceptes</b></p>
+    </div>
+    <ul>
+      <li>Tipus d'impresores</li>
+      <li>TIpus de materials d' impresores FMD</li>
+      <li>Tipus de materiales d' impresores de Resina</li>
+      <li>Apliacions práctiques</li>
+    </ul>
+  </div>
+  <div class="columna-ordinador-6 columna-tablet-8" >
+  <div class="cont2">
+      <h2 class="h2cont2">Descripció:</h2>
+      <p class="cita">"La frase "hágalo usted mismo" cobra un nuevo significado con la impresión 3D"</p>
       <p class="p1">
-        Text temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text
-        temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text
-        temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text
-        temporal. Text temporal . Text temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text
-        temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text
-        temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text
-        temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text
-        temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text temporal. Text
-        temporal. Text temporal. Text temporal
+        D'acord amb la Wikipedia, l'
+        <a title="Font de la Wikipedia" href="https://es.wikipedia.org/wiki/Impresi%C3%B3n_3D">Impresió 3D</a> és una
+        tecnología on un objecte es creat mitjançant la superposició de capas sucesives de material. Aixó s' aconsegueix
+        amb un objecte en 3 dimensiones y mitjançant un programa anomenat "Slicer", o tallador. Aquest programa analitza
+        el model y dictamina mitjançant uns paràmetres la forma y nombre de capes que se necesitarán per crear
+        l'objecte. Després creará un archiu amb extensió .code, el cual amb una micro SD s' introduirá a l' impresora y
+        li dirá tot alló que té que fer: la posició (coordenadores x,y,z), quant mollar material y la quantitat.
       </p>
     </div>
-    <div class="cont3">
-      <p class="p2">Enllaç a: <a title="Pàgina 2" href="Projecte-P2.html">Text temporal.</a></p>
+  </div> 
+  <div class="columna-ordinador-2 columna-tablet-12">
+    <div class="resum-costat">
+      <h2>Qué es?</h2>
+      <p>Una tecnología per crear per tu mateix objectes a partir d' un material</p>
+      <h2>Utilitats</h2>
+      <p>Fer objectes d' ús práctic o d' us estétic ( figures, cosplay, etc )</p>
+      <h2>Pros y cons</h2>
+      <p>-Estalvi de doblers y fer objectes a mesura ( ex: recanvis)</p>
+      <p>-L' impresió es molt lenta y requereix d' un aprenentatge</p>
+      
+
+
     </div>
+  </div>
+   <div class="columna-">
+    <div class="cont3">
+     <a title="Pagina 2" href="Projecte-P2.html"><p>Click aquí per a sebre més sobre els apartats de la taula de "Conceptes": </p></a>
+    </div>
+   </div>
+
+  
+  
   </body>
 </html>
