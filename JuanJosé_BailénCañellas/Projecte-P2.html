@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projecte-Pagina 2</title>
+    <style>
+      :root {
+        font-size: 14px;
+      }
+
+      [class*="columna-"] {
+        float: left;
+        padding: 12px;
+      }
+      body {
+        background-color: beige;
+        padding: 5px;
+      }
+      .capcelera-llista {
+        background-color: maroon;
+        color: white;
+        font-size: 1.2rem;
+        padding: 6px;
+        margin: 4px;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .llista li {
+        background-color: brown;
+        color: white;
+        font-size: 1.2rem;
+        padding: 10px;
+        margin: 4px;
+      }
+      .llista li:hover {
+        background-color: darkred;
+      }
+      .cont1 {
+        background-color: darkkhaki;
+        padding: 15px;
+        background-image: url(https://i0.wp.com/cdn.whadda.com/wp-content/uploads/2020/12/09143615/3Dprinting-banner.png?w=1200&ssl=1);
+      }
+      h1 {
+        text-align: center;
+        color: white;
+        text-decoration: underline;
+        font-size: 4rem;
+      }
+      img#spool {
+        position: absolute;
+        width: 200px;
+        left: 20px;
+      }
+      img#resinbottle {
+        position: absolute;
+        right: 20px;
+        width: 130px;
+      }
+      .cont2 {
+        display: block;
+        padding: 12px;
+        height: 400px;
+      }
+      .p1 {
+        color: rgb(34, 16, 0);
+        width: auto;
+        font-size: 1.2rem;
+      }
+
+      .cont3 {
+        background-color: darkkhaki;
+        color: rgb(34, 16, 0);
+        text-align: center;
+        padding: 5px;
+        margin: 10px;
+        font-size: 1.2rem;
+      }
+      .p2 {
+        text-align: center;
+        padding: 10px;
+      }
+      .cita {
+        color: grey;
+        font-style: italic;
+        font-size: 1.3rem;
+      }
+      a:link {
+        color: red;
+      }
+
+      a:visited {
+        color: purple;
+      }
+
+      a:hover {
+        color: midnightblue;
+      }
+
+      a:active {
+        color: blue;
+      }
+      .img1 {
+        width: 300px;
+        float: right;
+        height: auto;
+      }
+
+      .img1 {
+        max-width: 100%;
+        height: auto;
+      }
+      .resum-costat {
+        background-color: brown;
+        color: white;
+        padding: 12px;
+
+        text-align: center;
+        font-size: 1rem;
+      }
+      .cont-impressores {
+        background-color: indianred;
+        color: white;
+        padding: 12px;
+        text-align: center;
+        font-size: 2rem;
+        float: left;
+        margin: 15px;
+        width: 40%;
+      }
+      .p-explicació {
+        color: white;
+        font-size: 1.3rem;
+        text-align: center;
+      }
+      .p-explicació2 {
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      /*He agafat aquest paràmetres del exemple de la web de W3Schools */
+
+      /* Per a móbils: */
+      [class*="columna-"] {
+        width: 100%;
+      }
+      @media only screen and (min-width: 630px) {
+        /* Per a tablet: */
+        .columna-tablet-1 {
+          width: 8.33%;
+        }
+        .columna-tablet-2 {
+          width: 16.66%;
+        }
+        .columna-tablet-3 {
+          width: 25%;
+        }
+        .columna-tablet-4 {
+          width: 33.33%;
+        }
+        .columna-tablet-5 {
+          width: 41.66%;
+        }
+        .columna-tablet-6 {
+          width: 50%;
+        }
+        .columna-tablet-7 {
+          width: 58.33%;
+        }
+        .columna-tablet-8 {
+          width: 66.66%;
+        }
+        .columna-tablet-9 {
+          width: 75%;
+        }
+        .columna-tablet-10 {
+          width: 83.33%;
+        }
+        .columna-tablet-11 {
+          width: 91.66%;
+        }
+        .columna-tablet-12 {
+          width: 100%;
+        }
+      }
+      @media only screen and (min-width: 890px) {
+        /* Per a ordinador: */
+        .columna-ordinador-1 {
+          width: 8.33%;
+        }
+        .columna-ordinador-2 {
+          width: 16.66%;
+        }
+        .columna-ordinador-3 {
+          width: 25%;
+        }
+        .columna-ordinador-4 {
+          width: 33.33%;
+        }
+        .columna-ordinador-5 {
+          width: 41.66%;
+        }
+        .columna-ordinador-6 {
+          width: 50%;
+        }
+        .columna-ordinador-7 {
+          width: 58.33%;
+        }
+        .columna-ordinador-8 {
+          width: 66.66%;
+        }
+        .columna-ordinador-9 {
+          width: 75%;
+        }
+        .columna-ordinador-10 {
+          width: 83.33%;
+        }
+        .columna-ordinador-11 {
+          width: 91.66%;
+        }
+        .columna-ordinador-12 {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resum-costat">
+      <h2>Tipus principals d' Impressió 3D</h2>
+    </div>
+
+      <div class="cont-impressores">
+        <h2>Impresores de filament (FMD)</h2>
+        <p class="p-explicació">
+          Son les impressores 3D més comuns, y consisteixen en una boquilla per on entra un filament de plástic, la
+          boquilla s' encalenta a una temperatura d'entre uns 190-220 ºC, y va mollant el filament amb la quantitat en
+          les coordenades estrablertes en l' arxiu que s' está utilitzant.
+        </p>
+        <p class="p-explicació2">
+          Pots fer click en el gif per anar a un video de timelapses amb una impressora 3D de filament en funcionament:
+        </p>
+        <a title="Impressió 3D FMD timelapse" href="https://www.youtube.com/watch?v=54ZKeYPmoVs"
+          ><img class="img1" src="https://j.gifs.com/vOY6lo.gif" />
+        </a>
+      </div>
+    
+   
+      <div class="cont-impressores">
+        <h2>Impresores de Resina</h2>
+        <p class="p-explicació">
+          Aquestes son més complexes que la seva contrapart. Consisteixen en omplir una petita piscina de resina de
+          manera uniforme y després, una vegada començada l' impressió, un láser incorporat de llum UV solidificará la
+          resina capa per capa, fins que tot l' objecte estigui fet. Cal recalca que es més engorrós y es necessiten
+          guants, ya que no es recomanable tocar la resina directament amb les mans.
+        </p>
+        <p class="p-explicació2">
+          Pots fer click en el gif per anar a un video de timelapses amb una impressora de resina en funcionament:
+        </p>
+        <a title="Impressió 3D Resina timelapse" href="https://www.youtube.com/watch?v=08rGK-9fIzM"
+          ><img class="img1" src="https://www.hb3d.fr/medias/images/impression-3d-sla.gif"
+        /></a>
+      </div>
+   
+    <div class="columna-">
+      <div class="cont3">
+        <p>
+          En resumida es una tecnología que requereix de un aprenentatge per part de l'usuari, sebre els parámetres,
+          alçades, grossors de les capes,y sobretodo, armar-te de paçiencia.
+        </p>
+        <p>
+          En el timelapse de filament se pot veure un rellotge de fons on es pot veure el temps que tarda en imprimir
+          alguns objectes, tarda <b>MOLT.</b>
+        </p>
+        <p>
+          Per si vols dedicar-li temps et permet no només fer coses a mida, també et permet tenir coses que no es poden
+          comprar, y que si ho volguesis ho hauríes de commanar especialment.
+        </p>
+        <p>Pots clickar en el llibre per veure una galería de impressions 3D propies:</p>
+      </div>
+    </div>
+  </body>
+</html>
