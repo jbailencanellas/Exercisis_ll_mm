@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <input id="cs">
+    <button onclick="
+    var contrasenya = document.getElementById('cs').value
+    console.log ( contrasenya.indexOf('A'))
+    console.log ( contrasenya.indexOf('B'))
+
+    var A = contrasenya.indexOf(('A') )
+    var B = contrasenya.indexOf(('B') )
+    
+    
+    if ( (A)&&(B) >= 0 ) {
+        console.log('Si hay A y B') 
+        document.getElementById('resultado').innerHTML='La contraseña cumple con los parámetros'
+    }
+      else {
+        console.log('No hay A y B')
+        document.getElementById('resultado').innerHTML='La contraseña NO cumple con los parámetros'
+      }
+    ">Calcula</button>
+    <h2 id="resultado"></h2>
+</body>
+<script>
+
+
+</script>
+</html>

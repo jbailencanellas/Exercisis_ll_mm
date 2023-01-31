@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <label>Num1:</label>
+    <input id="num1"><br>
+    <label>Num2:</label>
+    <input id="num2">
+  
+<br><br>
+<button onclick="
+var numero1= parseFloat(document.getElementById('num1').value)
+var numero2= parseFloat(document.getElementById('num2').value)
+var resultat= calcular_suma(numero1,numero2)
+console.log( ' La suma de ' + numero1 + ' y ' + numero2 + ' es ' + resultat)
+document.getElementById('mensaje').innerHTML=' La suma de ' + numero1 + ' y ' + numero2 + ' es ' + resultat
+" >Calcular
+
+</button><br><br>
+<span id="mensaje"></span>
+</body>
+<script>
+function calcular_suma(a,b) {
+    return a+b
+}
+</script>
+</html>

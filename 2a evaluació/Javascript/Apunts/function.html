@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <label>Introdueix un numero:</label>
+<input id="numero">
+<br><br>
+<button onclick="
+var numero = document.getElementById('numero').value
+var quadrat = calcular_quadrado(numero)
+console.log( ' El quadrat de ' +  numero  + ' es ' + quadrat)
+
+document.getElementById('mensaje').innerHTML=' El quadrat de ' +  numero  + ' es ' + quadrat
+
+" >Calcular
+
+</button>
+<span id="mensaje"></span>
+</body>
+<script>
+function calcular_quadrado(n) {
+    var resultado = n * n
+    return resultado
+}
+</script>
+</html>
