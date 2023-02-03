@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <img id="image" src="lightbulb-off.png" style="width: 300px" />
+    <script>
+      //Obté el nom del fitxer a partir de la ruta completa
+      function getFileNameFromRoute(route) {
+        pos = route.lastIndexOf("/");
+        return route.substr(pos + 1, route.length - pos);
+      }
+
+    </script>
+  </body>
+</html>
