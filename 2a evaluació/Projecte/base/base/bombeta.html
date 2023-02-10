@@ -4,14 +4,26 @@
     <meta charset="UTF-8" />
   </head>
   <body>
-    <img id="image" src="lightbulb-off.png" style="width: 300px" />
+    <img id="image" src="lightbulb-off.png" style="width: 300px" onclick="bombilla()"/>
     <script>
       //Obté el nom del fitxer a partir de la ruta completa
       function getFileNameFromRoute(route) {
         pos = route.lastIndexOf("/");
         return route.substr(pos + 1, route.length - pos);
+        
       }
+      function bombilla() {
+        var src = document.getElementById("image").getAttribute("src")
+        var foto = getFileNameFromRoute(src)
+          if (foto === "lightbulb-off.png") {
+            document.getElementById("image").src = "lightbulb-on.png"
+          } else {
+            document.getElementById("image").src = "lightbulb-off.png"
+          }
+          
+          
 
+      }
     </script>
   </body>
 </html>

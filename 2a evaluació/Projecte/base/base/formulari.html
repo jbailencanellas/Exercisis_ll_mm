@@ -48,20 +48,8 @@
       <label>Email:</label><input id="email" type="text" /><br />
       <div>
         <button onclick="
-          var nombre = document.getElementById('nom').value
-          var edad = document.getElementById('edat').value
-          var correu = document.getElementById('email').value
-          console.log(nombre.length)
-           if ( nombre.length > 20 ) {
-           console.log('El nom pot tenir com a màxim 20 caracters') 
-           } else {
-            }
-           if ( edad < 18 ) {
-            console.log('Tens que tenir més de 18 anys per ingresar')
-           } else {
-            console.log('Pots ingresar')
-           }
-      return validaMail(correu)
+         validaFormulario()
+    
           
         ">Validar</button>
       </div>
@@ -70,6 +58,11 @@
   </body>
 
   <script>
+
+var nombre = document.getElementById('nom').value
+          var edad = document.getElementById('edat').value
+          var correu = document.getElementById('email').value
+
     function validaMail(correu) {
       var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
       if (correu =="") {
@@ -77,12 +70,31 @@
       return false
       }
       if (correu.match(validRegex)) {
-        console.log('EL correu es vaild ')
+        console.log('El correu es vaild ')
         return true
       } else {
         return false
       }
     }
-      
+    function validaFormulario() {
+
+      var nombre = document.getElementById('nom').value
+      var edad = document.getElementById('edat').value
+      var correu = document.getElementById('email').value
+
+          
+           if ( nombre.length > 20 ) {
+            missatges.innerHTML = 'El nom pot tenir com a màxim 20 caracters'
+           } else if ( edad < 18 ) {
+            missatges.innerHTML = 'Tens que tenir més de 18 anys'
+            }else if (!validaMail(correu)){
+              missatges.innerHTML = 'Email no vàlid'
+            } else {
+
+              missatges.innerHTML = 'Validat correctament'
+            }
+            
+       
+          }  
     </script>
 </html>
