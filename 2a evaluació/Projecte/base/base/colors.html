@@ -54,18 +54,31 @@
       <div class="colour green"></div>
       <div class="colour blue"></div>
     </div>
-    <button onclick="
-   cambiocolor()
-    ">Change Color</button>
+    <button onclick="cambioColor() ">Change Color</button> 
     <br />
     <div id="box"></div>
   </body>
   <script>
-    function cambiocolor() {
-      caja = document.getElementById("box");
-      
-      
+    //estableix una variable, amb el nom del color amb el qual comença el div i la seqüencia
+    var color = 'red';
+    //la funció s' encarregarà d' anant comprovant el valor actual de la variable color amb cada click del botó i anant actualitzant-la, aplicant el color corresponent a cada estat
+    function cambioColor() {
+     if (color === 'red') {
+      color = 'green';
+      document.getElementById("box").style.backgroundColor = color;
+     }
+      else if (color === 'green') {
+        color = 'blue';
+        document.getElementById("box").style.backgroundColor = color;
+      }
+      else {
+        //aquí es la part on si la variable no es ni red ni green, es que es blue i per tant, es posa una altra vegada en vermell per repetir el cicle.
+      color = 'red';
+      document.getElementById("box").style.backgroundColor = color;
+      }
     }
+    //Aixo es per a qué la cridada de la variable al botó s' efectui correctament.
+       document.getElementByTagName("button").onclick = cambioColor;
    
-  </script>
+  </script> 
 </html>

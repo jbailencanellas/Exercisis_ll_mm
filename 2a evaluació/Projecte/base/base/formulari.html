@@ -77,12 +77,13 @@ var nombre = document.getElementById('nom').value
       }
     }
     function validaFormulario() {
-
+      //Aixó agafara les entrades que s'introdueixqui en els camps corresponents
       var nombre = document.getElementById('nom').value
       var edad = document.getElementById('edat').value
       var correu = document.getElementById('email').value
 
-          
+          //Aixó aplicará els requisits, donant el missatge corresponent si no ho compleix"
+          //En cas de que hi hagui un requisit no complert, mostri el missatge dintre del div amb el error que toca.
            if ( nombre.length > 20 ) {
             missatges.innerHTML = 'El nom pot tenir com a màxim 20 caracters'
            } else if ( edad < 18 ) {
@@ -90,7 +91,8 @@ var nombre = document.getElementById('nom').value
             }else if (!validaMail(correu)){
               missatges.innerHTML = 'Email no vàlid'
             } else {
-
+              // el else es que si no ocurreix rés de lo escrit dintre de if, es que está tot bé, per tant está validat.
+              //Com en el cas dels errors, si está valitat correctamente, que ho mostri dintre del div.
               missatges.innerHTML = 'Validat correctament'
             }
             

@@ -13,6 +13,8 @@
         
       }
       function bombilla() {
+        //la variable src agafa el valor que hi ha en l' atribut src dintre del id Imatge
+        //la variable foto agafa la ruta de lo estipular en src
         var src = document.getElementById("image").getAttribute("src")
         var foto = getFileNameFromRoute(src)
           if (foto === "lightbulb-off.png") {
@@ -20,7 +22,8 @@
           } else {
             document.getElementById("image").src = "lightbulb-off.png"
           }
-          
+          //si está l'imatge de la bombeta apagada, que posi l' imatge de la encesa
+          //si no es compleix, es que s'ha cambiat el src per el nom de la bombeta ensella, llavors que torni a posar l'aturada
           
 
       }
