@@ -1,0 +1,1 @@
+//codigo javascript para generar un botón que dado un input con valor 10 cada vez que le de al botón vaya sumando 1

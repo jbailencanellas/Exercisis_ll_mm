@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        font-size: 18px;
+      }
+      #container {
+        padding: 10px 15px;
+      }
+      label {
+        display: inline-block;
+        text-align: right;
+        margin: 8px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      input {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 3px;
+      }
+      button {
+        padding: 5px;
+        cursor: pointer;
+        width: 200px;
+      }
+      #missatges {
+        border: 1px solid black;
+        background-color: azure;
+        padding: 20px 10px;
+        width: 300px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <label>Nombre:</label><input id="nombre" /><br />
+      <label>Apellido:</label><input id="apellido" /><br />
+      <div>
+        <button onclick="validar()"
+        >Validar</button>
+      </div>
+      <div id="missatges"></div>
+    </div>
+  </body>
+  <script>
+    var nom = document.getElementById('nombre').value
+    
+    var apellido = document.getElementById("apellido").value
+    function validar() {
+      var nom = document.getElementById('nombre').value
+       var apellido = document.getElementById("apellido").value
+     
+      if ( nom =="" ) {
+        missatges.innerHTML = "No has escrit el nom"
+        
+      }
+      else if ( apellido =="") {
+        missatges.innerHTML = "No has escrit el llinatge"
+      }
+      else if (nom == " ") {
+        missatges.innerHTML = "ni el nom ni el missatge poden contenir espais en blanc"
+      }
+      else if ( apellido == " ") {
+        missatges.innerHTML = "ni el nom ni el missatge poden contenir espais en blanc"
+      }
+      else {
+        missatges.innerHTML = "Nom i llinatge correctes"
+      }
+    }
+  </script>
+</html>
