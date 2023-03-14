@@ -1,0 +1,6 @@
+<!ELEMENT clientes (cliente+)>
+<!ELEMENT cliente (nombre, cif, diasentrega?, preferente?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cif (#PCDATA)>
+<!ELEMENT diasentrega (#PCDATA)>
+<!ELEMENT preferente (#PCDATA)>

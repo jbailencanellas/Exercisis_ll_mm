@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE llistaventes SYSTEM "llistavendes.dtd">
+<llistaventes>
+    <venda>
+        <import>40</import>
+        <nom_comprador>Raúl</nom_comprador>
+        <nom_venedor>Saúl</nom_venedor>
+        <data>01/08/2022</data>
+        <codi_factura>850947</codi_factura>
+    </venda>
+    <venda>
+        <import>20</import>
+        <nom_comprador>Pedro</nom_comprador>
+        <nom_venedor>Ramón</nom_venedor>
+        <data>14/04/2022</data>
+        <codi_factura>157649</codi_factura>
+    </venda>
+    <venda>
+        <import>30</import>
+        <nom_comprador>Elena</nom_comprador>
+        <nom_venedor>Lorena</nom_venedor>
+        <data>22/11/2021</data>
+        <codi_factura>741852</codi_factura>
+    </venda>
+</llistaventes>
