@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE productes SYSTEM "productes.dtd">
+<productes>
+    <ratolí>
+        <codi>7553159</codi>
+        <nom>Razer Viper</nom>
+        <descripció>Ratón ligero</descripció>
+    </ratolí>
+    <teclat>
+        <codi>852456</codi>
+        <descripció>Un ratón</descripció>
+    </teclat>
+    <monitor>
+        <codi>123654</codi>
+        <nom>Corsair Strafe</nom>
+    </monitor>
+</productes>
