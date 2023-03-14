@@ -1,0 +1,6 @@
+<!ELEMENT receta (name, ingrediente*)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT ingrediente (nombre, uso?, cantidad?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT uso (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listafacturas SYSTEM "listafacturas.dtd">
+<listafacturas>
+    <factura cif="43954837Q">
+        <fecha>14/03/2023</fecha>
+        <emisor>
+            <nombre>Pedro Pony</nombre>
+            <volumenventas>43</volumenventas>
+        </emisor>
+        <pagador>
+            <nombre>Rebeca Rabbit</nombre>
+        </pagador>
+        <importe>45,21€</importe>
+
+    </factura>
+    <factura cif="46528547N">
+        <emisor>
+            <nombre>Peppa Pig</nombre>
+        </emisor>
+        <pagador>
+            <nombre>Willy Wolf</nombre>
+        </pagador>
+        <importe>71,29€</importe>
+         </factura>
+</listafacturas>
