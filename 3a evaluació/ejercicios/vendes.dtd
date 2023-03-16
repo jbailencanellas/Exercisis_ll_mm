@@ -1,8 +1,0 @@
-<!ELEMENT vendes (venda+)>
-<!ELEMENT venda (vendacredit?, vendainmediata?)>
-<!ELEMENT vendacredit ( datapagament, quantitat )>
-<!ELEMENT datapagament (#PCDATA)>
-<!ELEMENT quantitat (#PCDATA)>
-<!ELEMENT vendainmediata ( quantity, divisa )>
-<!ELEMENT quantity (#PCDATA)>
-<!ELEMENT divisa (#PCDATA)>

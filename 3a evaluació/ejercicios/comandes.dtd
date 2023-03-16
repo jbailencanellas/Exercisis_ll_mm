@@ -1,5 +1,0 @@
-<!ELEMENT comandes (comanda*)>
-<!ELEMENT comanda (num_serie, quantitat, pes?)>
-<!ELEMENT num_serie (#PCDATA)>
-<!ELEMENT quantitat (#PCDATA)>
-<!ELEMENT pes (#PCDATA)>

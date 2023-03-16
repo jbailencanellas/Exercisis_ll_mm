@@ -1,7 +1,0 @@
-<!ELEMENT llistaventes (venda+)>
-<!ELEMENT venda (import, nom_comprador, nom_venedor, data, codi_factura) >
-<!ELEMENT import (#PCDATA)>
-<!ELEMENT nom_comprador (#PCDATA)>
-<!ELEMENT nom_venedor (#PCDATA)>
-<!ELEMENT data (#PCDATA)>
-<!ELEMENT codi_factura (#PCDATA)>

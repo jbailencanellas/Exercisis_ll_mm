@@ -1,7 +1,0 @@
-<!ELEMENT productes (ratolí, teclat, monitor)+>
-<!ELEMENT ratolí (codi, nom?, descripció?)>
-<!ELEMENT teclat (codi, nom?, descripció?)>
-<!ELEMENT monitor (codi, nom?, descripció?)>
-<!ELEMENT codi (#PCDATA)>
-<!ELEMENT nom (#PCDATA)>
-<!ELEMENT descripció (#PCDATA)>
